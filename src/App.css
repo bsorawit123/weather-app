@@ -7,9 +7,10 @@
 
 .app {
   background-image: url('img/Day.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 528px;
+  background-position: center;
+  max-width: 528px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -18,18 +19,18 @@
   background-image: url('img/Night.png');
 }
 
-main {
-  min-height: 100vh;
+.main {
+  /* min-height: 100vh; */
   padding: 25px;
 }
 
 .search-box {
-  width: 100%;
   margin: 15px 0 30px ;
 }
 
 .search-box .search-bar {
-  display: block;
+  /* display: block; */
+  /* min-width: 30%; */
   width: 100%;
   padding: 15px;
 
@@ -53,6 +54,11 @@ main {
 
 .search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.75)
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .location-box {

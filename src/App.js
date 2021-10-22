@@ -62,7 +62,7 @@ const App = () => {
           : "app"
       }
     >
-      <main>
+      <div className="main">
         <div className="search-box">
           <input
             type="text"
@@ -74,7 +74,7 @@ const App = () => {
           />
         </div>
         {typeof weather.main != "undefined" ? (
-          <div>
+          <div className="content">
             <div className="location-box">
               <div className="location">
                 {weather.name} {weather.sys.country}
@@ -95,7 +95,7 @@ const App = () => {
         ) : (
           ""
         )}
-      </main>
+      </div>
       <div className="credit">Created by Sorawit Phattharakundilok.</div>
     </div>
   );
